@@ -1,0 +1,439 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eaf0fc;
+}
+body::-webkit-scrollbar{
+  width: 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Custom styles for the "Nav bar"  */
+.navbar{
+  box-shadow: 3px 7px 12px rgba(0, 0, 0, 0.3);
+}
+.search-bar button{
+  background-color: #465b76;
+  border-radius: 0 10px 10px 0;
+}
+.search-bar button:hover{
+  background-color: #4d627d;
+}
+.search-bar input{
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.search-bar input[type="search"] {  
+  box-shadow: none;
+  -webkit-box-shadow: none;
+} 
+/* Custom styles for the "Hero" section */
+
+.hero1{
+  width: 50%;
+  text-align: left;
+  padding: 6rem;
+}
+.hero2{
+  width: 50%;
+}
+.hero2 img{
+  width: 80%;
+  height:80%;
+}
+#hero-title1{
+  color: #0aac71;
+  font-size: 3rem;
+  background-color: white;
+  border-radius: 28px;
+  padding: 1px 12px;
+}
+#hero-title2{
+  color: rgb(57, 57, 57);
+  font-size: 1.5rem;
+}
+.hero1 p{
+  font-size: 16px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+@media (max-width: 1200px) {
+  .hero1{
+    padding: 2rem;
+  }
+  #hero-title1{
+    font-size: 2rem;
+  }
+  #hero-title2{
+    font-size: 1.5rem;
+  }
+  
+}
+@media (max-width: 1000px) {
+  #hero-title2{
+    font-size: 1.3rem;
+  }
+  .hero p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 780px){
+  .hero{
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero1{
+    width: 100%;
+  }
+  .hero2{
+    width: 70%;
+  }
+}
+
+/* Custom styles for the "counter" section */
+.counter-section{
+  background-color: #081d3a;
+  width: 80%;
+  border-radius: 20px;
+  border: 10px solid #1c3c62;
+  position: relative;
+  top: -2rem;
+}
+.counter-box p{
+  color: #465b76;
+}
+.counter-box span{
+  color: white;
+}
+/* Custom styles for the "Our Services" section */
+.service-img{
+  border-radius: 50%;
+  width: 150px;
+}
+.card-services{
+  border-radius: 20px;
+}
+
+.services::after{
+  content: "";
+  display: block;
+  height: 10px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  top: -2rem;
+  margin: 0 auto;
+}
+
+.sep-img{
+  width: 50%;
+  height: 12rem;
+  margin: 0 auto;
+  position: relative;
+  top: 3rem;
+  z-index: 1;
+}
+.sep-img img{
+  width: 100%;
+  height: 12rem;
+  border-radius: 20px;
+  box-shadow: 4px 5px 10px rgba(0,0,0,0.3)
+}
+
+/* Custom styles for the "How it works" section */
+.how-it-works {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.how-it-works h5 {
+  color: orange;
+}
+
+.how-it-works h4 {
+  margin-top: 2rem;
+}
+
+/* Add styles for the arrow indicators */
+.horizontal-arrow {
+  color: #ccc;
+  font-size: 20px;
+  margin: 0 1rem;
+}
+
+/* Add styles for the card items */
+.card-container {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  flex: 0 0 calc(20% - 2rem); 
+  margin: 1rem;
+  padding: 5px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.card-item:hover{
+  transform: scale(1.01);
+}
+
+.card-item .card-img-top {
+  height: 150px; 
+  object-fit: cover;
+}
+
+.card-item .card-body {
+  padding: 0.8rem;
+}
+.horizontal-arrow{
+  color: rgb(86, 218, 86);
+  font-size: 20px;
+}
+.card-text{
+  font-size: 14px;
+}
+
+.box{
+  background-color: #439f90;
+  border: 10px solid #9ad9cf;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  position: relative;
+  top: 2rem;
+}
+.sub-box1{
+  width: 80%;
+  color: white;
+  display: flex;
+  text-align: center;
+}
+.sub-box2{
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+
+  .counter-section{
+    width: 90%;
+  }
+  .box{
+    width: 95%;
+  }
+  .sub-box1{
+    font-size: 24px;
+  }
+  .sub-box2{
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 588px){
+  .box{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card-container{
+    flex-direction: column;
+  }
+
+  .horizontal-arrow {
+      transform: rotate(90deg);
+  }
+}
+
+/* Custom Styles for footer */
+.footer{
+  background-image: url('./assets/images/footer-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#8185bc
+}
+.footer img{
+  width: 15%;
+}
+
+
+/* Custom Styles for About page */
+.about{
+  background-color: white;
+}
+.sub-div1{
+  width: 50%;
+}
+.sub-div2{
+  width: 50%;
+}
+.sub-div2 div{
+  border-radius: 20px;
+  box-shadow: 3px 4px 10px rgba(0,0,0,0.3);
+}
+.about img{
+  width: 80%;
+  height: 80%;
+}
+
+@media screen and (max-width: 700px) {
+  .about{
+    flex-direction: column;
+  }
+  .sub-div1{
+    width: 100%;
+  }
+  .sub-div2{
+    width: 100%;
+  }
+}
+
+
+/* css for testimonials section starts */
+.testimonial-card {
+  flex: 0 0 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .testimonial-card{
+      flex: 0 0 80%;
+  }
+}
+
+
+/* styling for find doctor page*/
+.findDoctorSearch{
+  background: url('assets/images/findDoctor.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 85vh;
+}
+
+.overlay{
+  width: 90%;
+  height: 60%;
+  background-color: #83838350;
+}
+
+.find-search input[type="text"] {  
+  box-shadow: none;
+  -webkit-box-shadow: none;
+} 
+
+/* styling for doctor profile page*/
+.doctorProfile{
+  box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+.doctorProfile img{
+  width: 80%;
+  height: 80%;
+}
+
+
+/* styling for login page*/
+.loginDiv1{
+  width: 50%;
+}
+.loginDiv2{
+  width: 50%;
+}
+@media screen and (min-width: 800px){
+  .login-container{
+    width: 90%;
+    min-height: 80vh;
+    background-image: url(assets/images/login.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #loginPhone{
+    display: none;
+  }
+}
+@media screen and (max-width: 800px){
+    .login-container{
+      flex-direction: column;
+      width: 90%;
+      min-height: 80vh;
+      background-color: #cee4f6;
+    }
+    .loginDiv1{
+      width: 100%;
+
+    }
+    .loginDiv2{
+      width: 100%;
+    }
+    #loginPhone{
+      display: block;
+      width: 50%;
+      margin:1rem auto;
+    }
+}
+
+
+/* css for prescription page */
+.EffectedCard {
+  position: relative;
+}
+
+.EffectedCard-img-container{
+  position: relative;
+  overflow: hidden;
+}
+
+.Effected-details-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.EffectedCard:hover .Effected-details-overlay {
+  opacity: 1;
+}
+
+.Effected-details-text {
+  text-align: center;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.EffectedCard-img-top {
+  transition: filter 0.3s;
+}
+
+.EffectedCard:hover .EffectedCard-img-top {
+  filter: blur(5px);
+}
+
+
